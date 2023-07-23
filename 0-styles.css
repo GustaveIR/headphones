@@ -1,133 +1,169 @@
-/* Reset CSS (optional) */
-/* Your CSS reset styles go here (if needed) */
-
-/* Global Variables (optional) */
-/* Define your variables, such as colors and fonts, here (if used) */
-
-/* Basic Styling */
-body {
+/* Reset CSS */
+body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-}
-
-/* Header Styles */
-header {
-    background-color: #333;
-    padding: 10px;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-}
-
-/* Hero Styles */
-.hero {
-    background-image: url("path-to-hero-image.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 500px;
+  }
+  
+  /* Variables */
+  :root {
+    --primary-color: #071629;
+    --secondary-color: #FF6565;
+    --text-color: #ffffff;
+    --link-hover-color: var(--secondary-color);
+    --button-hover-opacity: 0.9;
+    --max-content-width: 1000px;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    color: var(--text-color);
+  }
+  
+  .container {
+    max-width: var(--max-content-width);
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: var(--primary-color);
+    padding: 20px 0;
+  }
+  
+  nav {
     display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    color: #fff;
-}
-
-.hero h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 20px;
-    margin-bottom: 30px;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 12px 24px;
-    background-color: #FF6565;
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 4px;
-}
-
-/* Main Content Styles */
-.main-content {
-    padding: 40px;
-}
-
-.product-features h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.product-features ul {
-    list-style: disc;
-    margin-left: 30px;
-}
-
-.testimonials h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.testimonial {
-    margin-bottom: 30px;
-}
-
-.testimonial p {
-    font-style: italic;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-}
-
-.contact-info h3,
-.social-media h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.contact-info p {
-    margin-bottom: 5px;
-}
-
-.social-media ul {
+  }
+  
+  .logo img {
+    width: 100px; /* Adjust the logo width as needed */
+  }
+  
+  .menu {
+    display: flex;
     list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.social-media li {
+  }
+  
+  .menu li {
+    margin-left: 30px;
+  }
+  
+  .menu li:first-child {
+    margin-left: 0;
+  }
+  
+  .menu a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .menu a:hover {
+    color: var(--link-hover-color);
+  }
+  
+  .mobile-menu {
+    display: none;
+  }
+  
+  .hero {
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 40px;
+  }
+  
+  .cta-btn {
     display: inline-block;
-    margin-right: 10px;
-}
-
-.social-media img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-}
+    padding: 14px 32px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    opacity: var(--button-hover-opacity);
+  }
+  
+  /* Add media queries for mobile responsiveness */
+  @media screen and (max-width: 480px) {
+    .menu {
+      display: none;
+    }
+  
+    .mobile-menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+    }
+  
+    .burger-icon {
+      display: block;
+      width: 30px;
+      height: 20px;
+      cursor: pointer;
+      position: relative;
+    }
+  
+    .burger-icon span {
+      display: block;
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      background: var(--text-color);
+      transition: transform 0.3s ease;
+    }
+  
+    .burger-icon span:nth-child(1) {
+      top: 0;
+    }
+  
+    .burger-icon span:nth-child(2), .burger-icon span:nth-child(3) {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  
+    .burger-icon span:nth-child(3) {
+      top: auto;
+      bottom: 0;
+    }
+  
+    .mobile-menu.active .burger-icon span:nth-child(1) {
+      transform: rotate(45deg) translateY(7px);
+    }
+  
+    .mobile-menu.active .burger-icon span:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .mobile-menu.active .burger-icon span:nth-child(3) {
+      transform: rotate(-45deg) translateY(-7px);
+    }
+  
+    .mobile-menu.active .menu {
+      display: flex;
+    }
+  
+    .mobile-menu.active .menu li {
+      margin: 15px 0;
+    }
+  }
+  
