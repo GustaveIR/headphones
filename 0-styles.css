@@ -1,122 +1,78 @@
-/* Reset CSS styling */
-body, h1, h2, h3, p, ul, li {
+body {
     margin: 0;
     padding: 0;
-  }
-  
-  /* Global styles */
-  body {
     font-family: "Source Sans Pro", sans-serif;
-    color: #071629;
   }
   
-  .container {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  
-  /* Header styles */
   .header {
-    background-color: #071629;
-    color: white;
+    width: 1000.39px;
+    height: 31.18px;
     position: relative;
   }
   
-  .navbar {
+  .menu {
+    width: 255px;
+    height: 15px;
+    padding-right: 96px;
+    left: 745.39px;
+    top: 9.24px;
+    position: absolute;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 41px;
   }
   
-  .navbar__logo img {
-    width: 33px;
-    height: 31px;
-  }
-  
-  .navbar__links a {
+  .menu-item {
     color: white;
-    text-decoration: none;
-    margin: 0 10px;
-  }
-  
-  .navbar__cta {
-    display: flex;
-    align-items: center;
-  }
-  
-  .cta__button {
-    background-color: #FF6565;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 700;
-    border: none;
-    border-radius: 22px;
-    cursor: pointer;
+    word-wrap: break-word;
   }
   
-  /* Hero styles */
-  .hero {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url("path/to/hero-background.png");
-    background-position: center;
-    background-size: cover;
-    height: 70vh;
+  .logo {
+    width: 999.15px;
+    height: 31.18px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
   }
   
-  .hero__content {
-    text-align: center;
+  .logo img {
+    position: absolute;
   }
   
-  .hero h1 {
-    font-size: 48px;
-    font-weight: 600;
-    margin-bottom: 20px;
+  .dot {
+    width: 8px;
+    height: 8px;
+    left: 12.39px;
+    top: 13.24px;
+    position: absolute;
+    background: white;
   }
   
-  .hero p {
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 30px;
-  }
-  
-  .hero__cta {
-    background-color: #FF6565;
-    color: white;
-    padding: 12px 30px;
-    font-size: 16px;
-    font-weight: 700;
-    border: none;
-    border-radius: 22px;
-    cursor: pointer;
-  }
-  
-  /* Mobile responsiveness */
+  /* Media Query for mobile view */
   @media (max-width: 480px) {
-    .navbar {
+    .menu {
       flex-direction: column;
-      align-items: flex-start;
+      gap: 10px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      text-align: center;
     }
   
-    .navbar__links {
-      margin-top: 10px;
+    .logo {
+      width: 100%;
+      position: static;
+      text-align: center;
     }
   
-    .hero {
-      height: 50vh;
-    }
-  
-    .hero h1 {
-      font-size: 32px;
-    }
-  
-    .hero p {
-      font-size: 14px;
-      margin-bottom: 20px;
+    .logo img {
+      position: static;
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
     }
   }
   
