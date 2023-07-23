@@ -1,78 +1,122 @@
-body {
+/* Reset CSS styling */
+body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
-    font-family: "Source Sans Pro", sans-serif;
   }
   
+  /* Global styles */
+  body {
+    font-family: "Source Sans Pro", sans-serif;
+    color: #071629;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* Header styles */
   .header {
-    width: 1000.39px;
-    height: 31.18px;
+    background-color: #071629;
+    color: white;
     position: relative;
   }
   
-  .menu {
-    width: 255px;
-    height: 15px;
-    padding-right: 96px;
-    left: 745.39px;
-    top: 9.24px;
-    position: absolute;
+  .navbar {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 41px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
   }
   
-  .menu-item {
+  .navbar__logo img {
+    width: 33px;
+    height: 31px;
+  }
+  
+  .navbar__links a {
     color: white;
-    font-size: 12px;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .navbar__cta {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cta__button {
+    background-color: #FF6565;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
     font-weight: 700;
-    word-wrap: break-word;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
   }
   
-  .logo {
-    width: 999.15px;
-    height: 31.18px;
-    left: 0px;
-    top: 0px;
-    position: absolute;
+  /* Hero styles */
+  .hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("path/to/hero-background.png");
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
   }
   
-  .logo img {
-    position: absolute;
+  .hero__content {
+    text-align: center;
   }
   
-  .dot {
-    width: 8px;
-    height: 8px;
-    left: 12.39px;
-    top: 13.24px;
-    position: absolute;
-    background: white;
+  .hero h1 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 20px;
   }
   
-  /* Media Query for mobile view */
+  .hero p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  
+  .hero__cta {
+    background-color: #FF6565;
+    color: white;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+  }
+  
+  /* Mobile responsiveness */
   @media (max-width: 480px) {
-    .menu {
+    .navbar {
       flex-direction: column;
-      gap: 10px;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-      text-align: center;
+      align-items: flex-start;
     }
   
-    .logo {
-      width: 100%;
-      position: static;
-      text-align: center;
+    .navbar__links {
+      margin-top: 10px;
     }
   
-    .logo img {
-      position: static;
-      display: block;
-      margin: 0 auto;
-      max-width: 100%;
+    .hero {
+      height: 50vh;
+    }
+  
+    .hero h1 {
+      font-size: 32px;
+    }
+  
+    .hero p {
+      font-size: 14px;
+      margin-bottom: 20px;
     }
   }
   
