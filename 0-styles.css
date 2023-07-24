@@ -31,7 +31,7 @@ body {
 }
 
 .navbar__logo {
-    max-width: 100%
+    max-width: 50%
     margin: 0 auto; /* Center the logo */
 }
 
