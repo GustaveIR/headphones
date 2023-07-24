@@ -8,6 +8,17 @@ body, h1, h2, h3, p, ul, li {
 body {
     font-family: "Source Sans Pro", sans-serif;
     color: #071629;
+    /* Set the background image for the entire webpage */
+    background-image: url("headphones_hero_1.jpg"); /* Replace with the correct path */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* Ensure the background covers the whole viewport */
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    /* Set background to fill the entire viewport, including any potential scrollable area */
+    overflow: hidden;
 }
 
 .container {
@@ -72,9 +83,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("headphones_hero_1.jpg");
-    background-position: center;
-    background-size: cover;
+    /* Remove the background image for the hero, as it's set in the body */
+    background: none;
     height: 70vh;
 }
 
