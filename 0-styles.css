@@ -72,10 +72,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("headphones_hero_1.jpg");
+    background-image: url("path/to/your/hero_image.jpg");
     background-position: center;
     background-size: cover;
-    
     height: 70vh;
 }
 
@@ -117,18 +116,8 @@ body {
         margin-top: 10px;
     }
 
-    .navbar__links a:hover,
-    .navbar__links a:active {
-        color: #FF6565;
-    }
-
     .navbar__cta {
         margin-top: 10px;
-    }
-
-    .cta__button:hover,
-    .cta__button:active {
-        opacity: 0.9;
     }
 
     .container {
