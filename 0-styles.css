@@ -22,10 +22,11 @@ body {
 
 /* Header styles */
 .header {
-    background-color: #071629;
+    background-color: transparent; /* Set the header background to transparent */
     color: white;
     position: relative;
     text-align: center;
+    padding-top: 70px; /* Add some top padding to push content down */
 }
 
 .navbar {
