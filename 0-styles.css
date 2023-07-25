@@ -37,7 +37,8 @@ body {
 }
 
 .navbar__logo {
-    background-color: #071629;
+    /* Make the logo background transparent */
+    background-color: transparent;
     padding: 10px;
     max-width: 50%;
     margin: 0 auto;
