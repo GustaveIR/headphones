@@ -267,52 +267,51 @@ body {
 .what-we-do {
     background-color: #f2f2f2;
     padding: 50px 0;
-  }
-  
-  .what-we-do h2 {
+}
+
+.what-we-do h2 {
     text-align: center;
     font-size: 36px;
     font-weight: 600;
     margin-bottom: 30px;
-  }
-  
-  .services {
+}
+
+.services {
     display: flex;
     justify-content: space-between;
-  }
-  
-  .service {
+}
+
+.service {
     text-align: center;
     width: 30%;
     padding: 20px;
-  }
-  
-  /* Add styles for font icons */
-  .icon {
+}
+
+/* Add styles for font icons */
+.icon {
     font-size: 48px;
     margin-bottom: 20px;
-  }
-  
-  .service h3 {
+}
+
+.service h3 {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 10px;
-  }
-  
-  .service p {
+}
+
+.service p {
     font-size: 16px;
-  }
-  
-  /* Adjust the width of services for smaller screens */
-  @media (max-width: 768px) {
+}
+
+/* Adjust the width of services for smaller screens */
+@media (max-width: 768px) {
     .services {
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
-  
+
     .service {
-      width: 80%;
-      margin-bottom: 30px;
+        width: 80%;
+        margin-bottom: 30px;
     }
-  }
-  
+}
