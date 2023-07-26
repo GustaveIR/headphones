@@ -160,35 +160,57 @@ body {
 .our-results {
     background-color: #FF6565;
     padding: 50px 0;
-}
-
-.our-results h2 {
+  }
+  
+  .our-results h2 {
     text-align: center;
     font-size: 36px;
     font-weight: 600;
     margin-bottom: 30px;
-}
-
-.results {
+  }
+  
+  .results {
     display: flex;
     justify-content: space-between;
-}
-
-.result {
+  }
+  
+  .result {
     text-align: center;
     width: 30%;
     padding: 20px;
-}
-
-/* Define the styles for the pentagons */
-.pentagon {
-    position: relative;
-    width: 100px; /* Adjust the size as needed */
-    height: 70px; /* Adjust the size as needed */
-    background-color: #fff; /* Adjust the color as needed */
-    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-    margin: 0 auto;
-}
+    position: relative; /* Add position relative */
+  }
+  
+  /* Define the styles for the pentagons */
+  .result::before,
+  .result::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border: 35px solid transparent;
+    border-bottom-color: #fff; /* Adjust the color as needed */
+    z-index: 1;
+  }
+  
+  .result::before {
+    top: -35px;
+    border-bottom-color: #FF6565; /* Adjust the color as needed */
+    z-index: 2;
+  }
+  
+  .result h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .result p {
+    font-size: 16px;
+  }
+  
 
 /* Adjust the width of results for smaller screens */
 @media (max-width: 768px) {
