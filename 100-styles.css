@@ -192,7 +192,7 @@ body {
     width: 0;
     height: 0;
     border: 35px solid transparent;
-    border-bottom-color: #FF6565; /* Adjust the color as needed */
+    border-bottom-color: #fffbfb; /* Adjust the color as needed */
     z-index: 1;
   }
   
