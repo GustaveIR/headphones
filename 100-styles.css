@@ -198,7 +198,7 @@ body {
   
   .result::before {
     top: -35px;
-    border-bottom-color: #FF6565; /* Adjust the color as needed */
+    border-bottom-color: #eee9e9; /* Adjust the color as needed */
     z-index: 2;
   }
   
