@@ -256,43 +256,42 @@ body {
 
 /* What we do... section */
 .what-we-do {
-    background-color: #F5F5F5; /* Use the correct background color */
-    text-align: center;
-    padding: 50px 0;
+  background-color: #F5F5F5; /* Use the correct background color */
+  text-align: center;
+  padding: 50px 0;
 }
 
 .what-we-do h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
+  font-size: 36px;
+  margin-bottom: 40px;
 }
 
 .services-container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .service {
-    max-width: 300px;
-    padding: 20px;
-    margin: 20px;
-    border: 1px solid #DDD;
-    border-radius: 5px;
+  max-width: 300px;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #DDD;
+  border-radius: 5px;
 }
 
 .service img {
-    width: 80px; /* Adjust the size as needed */
-    margin-bottom: 20px;
+  width: 80px; /* Adjust the size as needed */
+  margin-bottom: 20px;
 }
 
 .service h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 .service p {
-    font-size: 16px;
+  font-size: 16px;
 }
-
 /* Adjust the width of services for smaller screens */
 @media (max-width: 768px) {
     .services {
