@@ -1,0 +1,306 @@
+/* Reset CSS styling */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    color: #071629;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Header styles */
+.header {
+    background-color: #071629;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.navbar__logo {
+    background-color: #071629;
+    padding: 10px;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.navbar__logo img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.navbar__links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.navbar__cta {
+    display: flex;
+    align-items: center;
+}
+
+.cta__button {
+    background-color: #FF6565;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+}
+
+/* Hero styles */
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("headphones_hero_1.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+}
+
+.hero__content {
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.hero__cta {
+    background-color: #FF6565;
+    color: white;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+}
+/* Animations */
+@keyframes bounceIn {
+    0% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes zoomIn {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+
+/* What we do... section */
+.what-we-do {
+    background-color: #FF6565; /* Use the correct background color */
+    text-align: center;
+    padding: 50px 0;
+}
+
+.what-we-do h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+}
+
+.service {
+    max-width: 300px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+}
+
+.service img {
+    width: 80px; /* Adjust the size as needed */
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 16px;
+}
+/* Adjust the width of services for smaller screens */
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+}
+
+/* Our Results section */
+.our-results {
+    background-color: #FF6565;
+    padding: 50px 0;
+  }
+  
+  .our-results h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  
+  .results {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .result {
+    text-align: center;
+    width: 30%;
+    padding: 20px;
+    position: relative; /* Add position relative */
+  }
+  
+  /* Define the styles for the pentagons */
+  .result::before,
+  .result::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border: 35px solid transparent;
+    border-bottom-color: #fffbfb; /* Adjust the color as needed */
+    z-index: 1;
+  }
+  
+  .result::before {
+    top: -35px;
+    border-bottom-color: #eee9e9; /* Adjust the color as needed */
+    z-index: 2;
+  }
+  
+  .result h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .result p {
+    font-size: 16px;
+  }
+  
+
+/* Adjust the width of results for smaller screens */
+@media (max-width: 768px) {
+    .results {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .result {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+}
+
+/* Contact Us section */
+.contact-us {
+    padding: 50px 0;
+}
+
+.contact-us h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #FF6565;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+}
+
+/* Footer section */
+.footer {
+    background-color: #071629;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
