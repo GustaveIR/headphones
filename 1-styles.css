@@ -256,43 +256,42 @@ body {
 
 /* What we do... section */
 .what-we-do {
-    background-color: #f2f2f2;
+    background-color: #EFEFEF;
+    text-align: center;
     padding: 50px 0;
-}
-
-.what-we-do h2 {
-    text-align: center;
+  }
+  
+  .what-we-do h2 {
     font-size: 36px;
-    font-weight: 600;
-    margin-bottom: 30px;
-}
-
-.services {
+    margin-bottom: 40px;
+  }
+  
+  .services-container {
     display: flex;
-    justify-content: space-between;
-}
-
-.service {
-    text-align: center;
-    width: 30%;
+    justify-content: center;
+  }
+  
+  .service {
+    max-width: 300px;
     padding: 20px;
-}
-
-/* Add styles for font icons */
-.icon {
-    font-size: 48px;
+    margin: 20px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+  }
+  
+  .service img {
+    width: 80px; /* Adjust the size as needed */
     margin-bottom: 20px;
-}
-
-.service h3 {
+  }
+  
+  .service h3 {
     font-size: 24px;
-    font-weight: 600;
     margin-bottom: 10px;
-}
-
-.service p {
+  }
+  
+  .service p {
     font-size: 16px;
-}
+  }
 
 /* Adjust the width of services for smaller screens */
 @media (max-width: 768px) {
