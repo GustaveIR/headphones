@@ -305,44 +305,7 @@ body {
         margin-bottom: 30px;
     }
 }
-/* Our Results section */
-.our-results {
-    background-color: #FF6565;
-    padding: 50px 0;
-  }
-  
-  .our-results h2 {
-    text-align: center;
-    font-size: 36px;
-    font-weight: 600;
-    margin-bottom: 30px;
-  }
-  
-  .results {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .result {
-    text-align: center;
-    width: 30%;
-    padding: 20px;
-  }
-  
-  .result .icon {
-    font-size: 48px;
-    margin-bottom: 20px;
-  }
-  
-  .result h3 {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
-  
-  .result p {
-    font-size: 16px;
-  }
+
   
   /* Adjust the width of results for smaller screens */
   @media (max-width: 768px) {
