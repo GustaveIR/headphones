@@ -328,7 +328,7 @@ body {
     padding: 20px;
 }
 
-/* Define the styles for the pentagons */
+//* Define the styles for the pentagons */
 .pentagon {
     position: relative;
     width: 100px; /* Adjust the size as needed */
@@ -336,7 +336,20 @@ body {
     background-color: #fff; /* Adjust the color as needed */
     clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
     margin: 0 auto;
-}
+  }
+  
+  /* Adjust the width of results for smaller screens */
+  @media (max-width: 768px) {
+    .results {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .result {
+      width: 80%;
+      margin-bottom: 30px;
+    }
+  }
   
   /* Adjust the width of results for smaller screens */
   @media (max-width: 768px) {
